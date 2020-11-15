@@ -1,0 +1,39 @@
+{% load static %}
+    <HTML>
+        <HEAD>
+        <TITLE>Balance Game to Test my Preference Lv7</TITLE>
+        <span style=" font: italic bold 2em/1em Georgia, serif ; color:#a52a2a;"><BR><H1 align="center" size="30"> Lv 7. </H1><BR></span>
+        </HEAD>
+
+        <!--배경색 지정과 페이지안에 있는 첫번째 버튼, vs, 두번째 버튼지정-->
+        <BODY style="background-color:#f7cac9">
+        <span style=" font: italic bold 1.2em/1em Georgia, serif ; color: #a52a2a;">
+            <center><a href="Lv8.html"><button  onclick="button1_click();" id='Lv11'; style="color: white; background:#ff7777; font-size:1em; padding:5px 20px; border-radius:0.5em; width:400px;height:400px;font-size:25px; ">
+                <img src="{% static 'img/smartphone.png'%}" width="180px" height="180px"><b><br><span style=" font: Arial 1.2em/1em Georgia, serif ; color: white;"><BR>사생활 노출</span></br></b></button></a></center>
+        <BR><H1 align="center" size="20">VS</H1></BR>
+        <center><a href="Lv8.html"><button  onclick="button1_click();" id='Lv11'; style="color: white; background:#ff7777; font-size:1em; padding:5px 20px; border-radius:0.5em; width:400px;height:400px;font-size:25px; ">
+            <img src="{% static 'img/underpants.png'%}" width="180px" height="180px"><b><br><span style=" font: Arial 1.2em/1em Georgia, serif ; color: white;"><BR>노출로 생활</span></br></b></button></a></center>
+        
+        <!--이전 화면으로 이동하는 Back 버튼의 디자인과 기능을 가진 함수 입력-->
+        <br><center><button style="background: white;" onclick="goBack()"><img src="{% static 'img/arrow.png'%}" width="50px" height="50px">Back</button>
+            <script>
+            function goBack() {
+                window.history.back();
+            }
+            </script>
+
+            <!--상단 화면으로 이동하는 Back 버튼의 디자인과 기능을 가진 함수 입력-->
+            <button style="background: white;" onclick="window.location.href='#top'"> <img src="{% static 'img/up-arrow.png'%}" width="50px" height="50px">Top</button></center>
+            </span>
+            <BR>
+            <script>
+                function btn(){
+                    if(onclick="button1_click();"){
+                        
+                    }
+                }
+
+            </script>
+
+        </BODY>
+        </HTML>
